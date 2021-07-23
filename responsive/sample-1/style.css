@@ -1,0 +1,38 @@
+/** MOBILE FIRST **/
+
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+.box {
+    width: 80%;
+    height: 400px;
+    background-color: purple;
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.box h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@media only screen and (min-width: 540px) {
+    
+    .box {
+        width: 50%;
+        background-color: gray;
+    }   
+}
+
+@media only screen and (min-width: 920px) {
+    
+    .box {
+        width: 50%;
+        background-color: orange;
+    }    
+}
