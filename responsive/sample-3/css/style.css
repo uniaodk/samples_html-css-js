@@ -1,0 +1,16 @@
+.my-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 60px auto;
+    background-color: #80c;
+    border-radius: 8px;
+}
+
+.my-item {
+    background-color: #2fb;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 30px;
+    border: 4px solid white
+}
