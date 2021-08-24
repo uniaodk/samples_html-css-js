@@ -1,6 +1,6 @@
 # Card
 
-## Sample 1
+## Card 1
 
 Design system based on [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/).
 - Always init CSS class propertie (`width`, `heigth`, `display` ...)
@@ -9,7 +9,7 @@ Design system based on [Atomic Design](https://bradfrost.com/blog/post/atomic-we
 - `display: table`: fill the heigth as your childs
 - Always try to organize the components with the tags (`header`, `main`, `body`, `footer`)
 
-## Sample 2
+## Card 2
 
 - Try to draw your page before to start to develop (Pixel Perfect)
 - `box-sizing: border-box` (remove the excess margin)

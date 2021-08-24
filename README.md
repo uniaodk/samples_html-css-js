@@ -19,6 +19,8 @@ Just open the html file in browser. I edited all html, css and js files with [VS
 
 - [Card](./doc/card.md)
 - [Responsive](./doc/responsive.md)
+- [Animations](./doc/animations.md)
+- [SVG](.doc/svg.md)
 
 ## Utils <a name = "utils"></a>
 
