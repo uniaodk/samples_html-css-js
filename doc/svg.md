@@ -1,7 +1,5 @@
 ## SVG (Scalable Vector Graphics)
 
-# Sample 1
-
 - Can be created by `software` or `code`
 - Software free [Inkscape](https://inkscape.org/)
 - Insert svg by `<img>` tag, by `<object>` tag can modify proprieties inside the svg or by `inline`

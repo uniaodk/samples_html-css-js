@@ -1,0 +1,21 @@
+## JS - Java Script
+
+- Native of browsers
+- Control the elements DOM (Document Object Model), like HTML, XML and SVG
+- Client side execution
+    - HTML
+    - Resources - images
+    - CSS
+    - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Object `window` is the root's page
+- Primitives variable's type:
+    - string
+    - number
+    - boolean
+    - null (variable or propriety that was assign with no value)
+    - undefined (variable or propriety not exist or not assign )
+    - symbol (that’s guaranteed to be unique)
+- Variables:
+    - var (global variable)
+    - let (only can use inside the scope and childs that was declared)
+    - const (must be initializated and can't be assign after)

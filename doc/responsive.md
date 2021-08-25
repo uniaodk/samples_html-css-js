@@ -2,18 +2,12 @@
 
 Has many CSS framework that use layout, grid and flexbox. This examples I used the [Bootstrap 5](https://getbootstrap.com/). Some features can't work in some specific browsers, then you search on [Can I Use](https://caniuse.com/)
 
-## Media
-
 - Mobile first on style
 - `@media` can be screen or print
-
-## Bootstrap Grid
 
 - Grid System Bootstrap [Compiled CSS and JS](https://getbootstrap.com/)
 - .min is more efficient (less lines)
 - must follow that sequence of class -> `container`, `row` and `col`;
-
-## Flex box
 
 - Flex box [Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - Use `display: flex`
