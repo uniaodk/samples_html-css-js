@@ -6,4 +6,4 @@
 - Software free [Inkscape](https://inkscape.org/)
 - Insert svg by `<img>` tag, by `<object>` tag can modify proprieties inside the svg or by `inline`
 - [Documentation SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
-- Animate svg by tag object, calling the `@keyfram` on class
+- Animate svg by tag object, calling the `@keyframe` on class
