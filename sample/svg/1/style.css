@@ -1,0 +1,31 @@
+@keyframes dashAnim {
+    from{
+        stroke-dashoffset: 1000px;
+        fill: transparent;
+    }
+
+    to {
+        stroke-dashoffset: 0px;
+        fill: yellow;
+    }
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+object {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.sample {
+    stroke: blue;
+    stroke-width: 4px;
+    stroke-miterlimit: 10px;
+    stroke-dasharray: 1000px;
+    animation: dashAnim 5s linear infinite;
+}

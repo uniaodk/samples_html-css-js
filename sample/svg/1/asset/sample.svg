@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../style.css"?>
+<svg width="10cm" height="10cm" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient132" x1="8.4576" x2="88.094" y1="50.874" y2="50.874" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path class="sample" d="m17.107 57.319-8.4656-34.215 39.506 11.993 2.4691 35.802-24.515 15.873 61.728 0.35273-20.282-27.337 13.757-36.684-38.977-8.4656z" fill="url(#linearGradient132)" stroke="#000" stroke-width=".26458px"/>
+</svg>
