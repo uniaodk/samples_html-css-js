@@ -13,9 +13,20 @@
     - number
     - boolean
     - null (variable or propriety that was assign with no value)
-    - undefined (variable or propriety not exist or not assign )
+    - undefined (variable or propriety not exist or not assign)
     - symbol (that’s guaranteed to be unique)
 - Variables:
     - var (global variable)
     - let (only can use inside the scope and childs that was declared)
     - const (must be initializated and can't be assign after)
+- Operators:
+    - assign (triple equals valid type too. Ex: 2 == "2" -> true; 2 === "2" -> false);
+    - arithmetic
+    - camparation
+    - bit
+    - logic
+    - unary
+    - ternary
+    - relacional
+- Selectors
+    - document.querySelectorAll - find by classes, id and tags

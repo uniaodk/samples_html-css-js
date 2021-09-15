@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Selector</title>
+    <style>
+        h1 {
+            width: 300px;
+            height: 50px;
+            margin: 15px auto;
+            display: block;
+            background-color: #eee;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 50px;
+        }
+
+        .my-buttons {
+            width: 300px;
+            height: 50px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .my-buttons button {
+            width: 50%;
+            height: 40px;
+            float: left;
+        }
+    </style>
+</head>
+<body style="text-align: center; margin-top: 100px;">
+    <h1 class="blue-item">Blue 1</h1>
+    <h1 class="blue-item">Blue 2</h1>
+    <h1 class="blue-item">Blue 3</h1>
+
+    <h1 class="red-item">Red 1</h1>
+    <h1 class="red-item">Red 2</h1>
+    <h1 class="red-item">Red 3</h1>
+
+    <div class="my-buttons">
+        <button onclick="changeColor('blue', blues)">Blues</button>
+        <button onclick="changeColor('red', reds)">Reds</button>
+    </div>
+
+    <script>
+        var blues = document.querySelectorAll(".blue-item");
+        var reds = document.querySelectorAll(".red-item");
+
+        function changeColor(color, elements) {
+            elements.forEach(e => e.style.color = color);
+            document.body.style.background = color;
+        }
+    </script>
+</body>
+</html>
