@@ -1,6 +1,7 @@
 ## JS - Java Script
 
 - Native of browsers
+- 
 - Control the elements DOM (Document Object Model), like HTML, XML and SVG
 - Client side execution
     - HTML
@@ -30,3 +31,10 @@
     - relacional
 - Selectors
     - document.querySelectorAll - find by classes, id and tags
+- Control flow
+    - if else statment
+    - switch case
+    - for (in, of, i ...)
+    - while
+- Events (MouseEvent, KeyboardEvent...)
+- Functions (function name(params) {}, const name = (params) => {})

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS - Event</title>
+    <style>
+        .box {
+            width: 450px;
+            height: 200px;
+            display: block;
+            margin: 60px auto;
+            background-color: indigo;
+            color: mediumspringgreen;
+            text-align: center;
+            line-height: 200px;
+            font-size: 41px;
+            font-family: monospace;
+            font-weight: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        var boxOne = document.getElementById('box');
+        var allBoxes = document.querySelectorAll('.box');
+        var boxNames = ['Box 1', 'Box 2', 'Box 3', 'Box 4', 'Box 5', 'Box 6']
+
+        for (let i = 0; i < allBoxes.length; i++)
+           allBoxes[i].append(boxNames[i]); 
+
+        boxOne.addEventListener('click', () => {
+            allBoxes.forEach(box => box.style.background = 'black');
+        });
+
+        let step = 0;
+        window.addEventListener('scroll', () => {
+            let newStep = parseInt((window.scrollY + 150) / 130);
+            if (step == newStep) return;
+            step = newStep;
+            for (let i = 0; i < step; i++)
+                allBoxes[i].style.background = 'blue';
+            for (let i = allBoxes.length - 1; i > step; i--) 
+                allBoxes[i].style.background = 'indigo';
+        })
+    </script>
+
+</body>
+
+</html>
