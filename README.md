@@ -22,6 +22,7 @@ Just open the html file in browser. I edited all html, css and js files with [VS
 - [Animations](./doc/animations.md)
 - [SVG](./doc/svg.md)
 - [Java Script](./doc/js.md)
+- [JQuery](.doc/jquery.md)
 
 ## Utils <a name = "utils"></a>
 
