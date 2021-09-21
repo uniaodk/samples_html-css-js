@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+    .p1-page-wrapper {
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: #111;
+        border: 30px solid #000;
+    }
+
+    .p1-topbar {
+        width: 100%;
+        height: 110px;
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .p1-logo {
+        width: 75px;
+        height: 110px;
+        float: left;
+        margin-left: 60px;
+        background-color: #2C6;
+        border-radius: 0 0 37px 0;
+    }
+
+    .p1-logo img {
+        width: 47px;
+        height: 31px;
+        display: block;
+        margin: 55px auto 0 auto;
+    }
+
+    .p1-menu { 
+        display: none;
+    }
+
+    .p1-btn-contact {
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-color: #2C6;
+        background-image: url('../image/icon-contact-close.svg');
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        border-radius: 50%;
+        z-index: 2;
+        transition: all 0.2s ease-out;
+    }
+
+    .p1-btn-contact:hover {
+       background-position-y: -45px; 
+    }
+
+    .p1-contact-info {
+        width: 245px;
+        height: 165px;
+        padding: 25px;
+        position: fixed;
+        bottom: 115px;
+        right: 75px;
+        z-index: 2;
+    }
+
+    .p1-contact-info-inner {
+        width: 100%;
+        display: table;
+        float: right;
+    }
+
+    .p1-conner-chat {
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: right;
+    }
+
+    .p1-conner-chat:after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        bottom: -19px;
+        right: 0;
+        background: transparent url('../image/corner.svg') no-repeat
+    }
+
+    .p1-contact-info-inner p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .p1-social-links {
+        width: 100%;
+        height: 45px;
+        display: block;
+        position: relative;
+        left: -12px;
+        margin-top: 7px;
+    }
+
+    .p1-social {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+    }
+
+    .p1-social > img {
+        width: 20px;
+        height: auto;
+        display: block;        
+        margin: 13px auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    .p1-menu { 
+        height: 110px;
+        display: block;
+        float: left;
+        margin-left: 30px;
+    }
+
+    .p1-menu a {
+        font-size: 16;
+        font-family: 'Open Sans';
+        color: #bbb;
+        text-decoration: none;
+        text-transform: lowercase;
+        display: inline-block;
+        margin: 50px 20px 0 20px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .p1-menu a:first-child {
+        margin-left: 0;
+    }
+
+    .p1-menu a:hover {
+        color: #2C6;
+    }
+
+    .p1-menu a:before {
+        width: 0;
+        height: 4px;
+        content: '';
+        background-color: #2C6;
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        transition: all 0.2s ease-out;
+    }
+
+    .p1-menu a:hover:before {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 1364px) {
+    
+}
+
+@media screen and (min-width: 1600px) {
+    
+}
+
+/* UTILS */
+
+.p1-title {
+    font-weight: 100;
+    font-family: 'Abril Fatface', serif;
+}
+
+.p1-text-green {
+    color: #2C6;
+}
+
+.p1-text-dark {
+    color: #444;
+}
+
+.p1-text-light {
+    color: #BBB;
+}
+
+.p1-text-black {
+    color: #000;
+}
+
+.p1-bg-green {
+    background-color: #2C6;
+}
+
+.p1-bg-dark {
+    background-color: #444;
+}
+
+.p1-bg-light {
+    background-color: #BBB;
+}
+
+.p1-bg-black {
+    background-color: #000;
+}
