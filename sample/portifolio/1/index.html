@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Portifolio - 1</title>
 </head>
 
 <body>
+    <div class="p1-preloader">
+        <div class="p1-preloader-inner">
+            <img src="image/lemon-loader.svg" alt="Lemon Loader">
+            <p class="p1-text-light p1-mt-15 p1-text-align-center">Wait a few seconds... I'm making lemonade</p>
+        </div>
+    </div>
+
     <header class="p1-topbar">
         <div class="p1-logo">
             <img src="image/logo.svg" alt="Logo P1">
@@ -28,19 +38,44 @@
             <p>+55 (48) 9 9988 9988</p>
             <div class="p1-social-links">
                 <a href="#" class="p1-social">
-                    <img src="image/icon-instagram.svg" alt="Instagram"/>
+                    <img src="image/icon-instagram.svg" alt="Instagram" />
                 </a>
                 <a href="#" class="p1-social">
-                    <img src="image/icon-twitter.svg" alt="Twitter"/>
+                    <img src="image/icon-twitter.svg" alt="Twitter" />
                 </a>
                 <a href="#" class="p1-social">
-                    <img src="image/icon-dribbble.svg" alt="Dribbble"/>
+                    <img src="image/icon-dribbble.svg" alt="Dribbble" />
                 </a>
             </div>
         </div>
         <div class="p1-conner-chat"></div>
     </div>
-    <div class="p1-btn-contact"></div>
-    <div class="p1-page-wrapper"></div>
+    <button class="p1-btn-contact"></button>
+    <div class="p1-page-wrapper">
+        <section id="p1-home-presentation" class="p1-full-heigth p1-fix-first-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 offset-md-2 p1-display-text">
+                        <h1 class="p1-title-big p1-text-green">Hi!</h1>
+                        <p class="p1-text-light">It's the <span class="p1-text-green">Portifolio 1</span>. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Laboriosam, quidem perspiciatis dolorem iste
+                            esse mollitia, reiciendis quisquam nostrum nesciunt sint optio consequuntur natus aliquam
+                            sequi ratione labore, doloremque dolorum eveniet!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p1-scroll-down">
+                <div class="p1-arrow-down">
+                    <img src="image/arrow-down.svg" alt="Arrow Down">
+                </div>
+            </div>
+        </section>
+        <section class="p1-full-heigth">
+
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
