@@ -20,6 +20,58 @@
         </div>
     </div>
 
+    <div class="p1-overlay p1-toggle-modal"></div>
+
+    <div class="p1-modal p1-bg-black" id="p1-modal-budget">
+        <div class="p1-modal-header">
+            <h1 class="p1-title p1-text-green">Budget request</h1>
+            <button class="p1-close-modal p1-text-green p1-toggle-modal">X</button>
+        </div>
+
+        <div class="p1-modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="p1-text-light">Please fill the fields below and I'll contact you as soon as I can.</p>
+                </div>
+            </div>
+            <div class="row p1-mt-15">
+                <div class="col-sm-12">
+                    <form class="p1-form" action="">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 p1-mb-15">
+                                <label for="name" class="p1-text-light">Name</label>
+                                <input type="text" name="name" id="p1-name" class="p1-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 p1-mb-15">
+                                <label for="email" class="p1-text-light">Email</label>
+                                <input type="email" name="email" id="p1-email" class="p1-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 p1-mb-15">
+                                <label for="telefone" class="p1-text-light">Phone</label>
+                                <input type="tel" name="telefone" id="p1-telefone" class="p1-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 p1-mb-15">
+                                <label for="site" class="p1-text-light">Site</label>
+                                <input type="url" name="site" id="p1-site" class="p1-field" />
+                            </div>
+                            <div class="col-sm-12 p1-mb-15">
+                                <label for="message" class="p1-text-light">Describe below which project you need to
+                                    budget:</label>
+                                <textarea class="p1-textarea p1-no-resizable" name="message" id="p1-message"
+                                    rows="8"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row justify-content-end p1-mt-15">
+                        <div class="col-sm-12 col-md-6">
+                            <button class="p1-btn p1-btn-large p1-btn-green p1-btn-100">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="p1-topbar">
         <div class="p1-logo">
             <img src="image/logo.svg" alt="Logo P1">
@@ -61,20 +113,65 @@
                             dolor sit amet consectetur adipisicing elit. Laboriosam, quidem perspiciatis dolorem iste
                             esse mollitia, reiciendis quisquam nostrum nesciunt sint optio consequuntur natus aliquam
                             sequi ratione labore, doloremque dolorum eveniet!</p>
+                        <button class="p1-btn p1-btn-medium p1-btn-green p1-mt-15 p1-toggle-modal">Budget
+                            request</button>
                     </div>
                 </div>
             </div>
-            <div class="p1-scroll-down">
+            <button class="p1-scroll-down">
                 <div class="p1-arrow-down">
                     <img src="image/arrow-down.svg" alt="Arrow Down">
                 </div>
+            </button>
+        </section>
+        <section class="p1-full-heigth" id="p1-home-portifolio">
+            <div class="container-fluid p1-no-padding">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="p1-portifolio-navigator">
+                            <div class="p1-navigator-counter">
+                                <span class="p1-text-green">01</span>
+                            </div>
+                            <nav class="p1-item-navigator">
+                                <a href="#" class="p1-item-active"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </nav>
+                            <div class="p1-items-next-prev p1-no-radius-left">
+                                <div class="p1-item-prev">
+                                    <ion-icon name="arrow-dropleft"></ion-icon>
+                                </div>
+                                <div class="p1-items-counter">
+                                    <span>01</span>/<span>05</span>
+                                </div>
+
+                                <div class="p1-item-next">
+                                    <ion-icon name="arrow-dropright"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="p1-slider-container p1-full-heigth">
+                            <ul class="p1-slider-list">
+                                <li class="p1-slider-item" style="background-color: red;"></li>
+                                <li class="p1-slider-item" style="background-color: yellow;"></li>
+                                <li class="p1-slider-item" style="background-color: green;"></li>
+                                <li class="p1-slider-item" style="background-color: blue;"></li>
+                                <li class="p1-slider-item" style="background-color: purple;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="p1-full-heigth">
-
-        </section>
     </div>
-
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/shortcuts/inview.min.js"></script>
+    <script src="js/anime.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

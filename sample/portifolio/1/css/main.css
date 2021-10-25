@@ -6,13 +6,20 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-p {
+p, label {
     font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes fadeOut {
     to {
         opacity: 0;
+    }
+}
+
+@keyframes slideToTop {
+    to {
+        top: 15%;
+        opacity: 1;
     }
 }
 
@@ -75,6 +82,71 @@ p {
         top: 0;
         left: 0;
     }
+
+    .p1-overlay {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background-color: rgb(34, 204, 102, 0.95);
+    }
+
+    .p1-modal {
+        width: 800px;
+        display: none;
+        padding: 30px;
+        border-radius: 0 30px 30px 30px;
+        position: fixed;
+        top: -100%;
+        opacity: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 4;
+    }
+
+    .p1-modal-header, .p1-modal-body, .p1-form {
+        width: 100%;
+        display: table;
+        position: relative;
+    }
+
+    .p1-close-modal {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        border-radius: 50%;
+        background-color: #222;
+        border: none;
+        cursor: pointer;
+        font-weight: 900;
+    }
+
+    
+    .p1-form label {
+        margin-bottom: 10px;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .p1-field, .p1-textarea {
+        width: 100%;
+        background-color: #222;
+        border-radius: 4px;
+        border: none;
+        color: #FFF;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .p1-field {
+        height: 45px;
+    }   
 
     .p1-topbar {
         width: 100%;
@@ -204,6 +276,7 @@ p {
         width: 70px;
         height: 105px;
         border-radius: 35px 35px 0 0;
+        border: none;
         background-color: #2C6;
         display: block;
         position: absolute;
@@ -250,6 +323,120 @@ p {
         transform-origin: top center;
         transform: scale(1, 0);
         animation: lineDown 1.5s ease-out infinite;
+    }
+
+    /** HOME - PORTIFOLIO **/
+    
+    .p1-portifolio-navigator {
+        width: 145px;
+        height: 400px;
+        display: table;
+        position: absolute;
+        left: 0;
+        top: 26vh;
+    }
+
+    .p1-navigator-counter {
+        width: 100%;
+        height: 90px;
+        display: block;
+        margin-bottom: 60px;
+        position: relative;
+    }
+
+    .p1-navigator-counter:before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 100%;
+        background-color: #111;
+        position: absolute;
+        top: 3px;
+        left: 0;
+    }
+
+    .p1-navigator-counter span {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 120px;
+        font-weight: 600;
+        line-height: 90px;
+    }
+
+    .p1-item-navigator {
+        width: 100%;
+        display: table;
+    }
+
+    .p1-item-navigator a {
+        width: 20px;
+        height: 1px;
+        display: block;
+        margin: 0 0 80px 35px;
+        background-color: #444;
+    }
+    
+    .p1-item-navigator a.p1-item-active {
+        width: 90px;
+        background-color: #2C6;
+    }
+
+    .p1-item-navigator a:last-child {
+        margin-bottom: 30px;
+    }
+
+    .p1-items-next-prev {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222;
+        border-radius: 23px;
+    }
+
+    .p1-items-next-prev > div {
+        height: 32px;
+    }
+
+    .p1-items-counter {
+        font-family: 'Open Sans', sans-serif;
+        color: #444;
+        line-height: 32px;
+    }
+
+    .p1-items-counter span:nth-child(1) {
+        color: #BBB;
+    }
+
+    .p1-item-next, .p1-item-prev {
+        width: 45px;
+        color: #2C6;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    ion-icon {
+        font-size: 32px;
+    }
+
+    .p1-slider-container {
+        background-color: white;
+        display: block;
+        overflow: hidden;
+    }
+
+    .p1-slider-list {
+        width: auto;
+        height: 700px;
+        display: block;
+        background-color: deeppink;
+        list-style: none;
+    }
+
+    .p1-slider-item {
+        height: 500px;
+        display: block;
+        float: left;
     }
 }
 
@@ -316,6 +503,67 @@ p {
 
 @media screen and (min-width: 1600px) {
     
+}
+
+/* BUTTONS */
+
+.p1-btn {
+    display: table;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: all 0.2s ease-out;
+}
+
+.p1-btn-small {
+    height: 28px;
+    padding: 0 20px;
+    border-radius: 14px;
+    font-size: 11px;
+}
+
+.p1-btn-medium {
+    height: 38px;
+    padding: 0 27px;
+    border-radius: 19px;
+    font-size: 14px;
+}
+
+
+.p1-btn-large {
+    height: 45px;
+    padding: 0 35px;
+    border-radius: 23px;
+    font-size: 16px;
+}
+
+.p1-btn-100 {
+    width: 100%;
+    display: block;
+}
+
+.p1-btn-green {
+    background-color: #2C6;
+    color: #111;
+}
+
+.p1-btn-green:hover {
+    background-color: #296;
+    color: #FFF;
+}
+
+
+.p1-btn-dark {
+    background-color: #333;
+    color: #2C6;
+}
+
+.p1-btn-dark:hover {
+    background-color: #000;
+    color: #FFF;
 }
 
 /* SIZE TEXT */
@@ -419,6 +667,11 @@ p {
 
 .p1-full-heigth {
     height: 100vh;
+    position: relative;
+}
+
+.p1-no-resizable {
+    resize: none;
 }
 
 /* ACTIONS */
@@ -427,12 +680,30 @@ p {
     display: block;
 }
 
+.p1-no-padding {
+    padding: 0 !important;
+}
+
 .p1-change-position-y {
     background-position-y: -45px;
 }
 
 .p1-fade-out {
     animation: fadeOut 2s forwards ease-out;
+}
+
+.p1-slide-to-top {
+    animation: slideToTop 0.6s forwards cubic-bezier(0, 1.1, .6, .89);
+}
+
+.p1-no-radius-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p1-no-radius-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 /* FIXES */
